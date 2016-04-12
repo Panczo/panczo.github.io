@@ -1,6 +1,8 @@
 @import "animations.css";
 @import "bootstrap.min.css";
 @import "bootstrap-theme.css";
+@import "owl.carousel.css";
+@import "owl.theme.css";
 @import "style.css";
 
 html {
