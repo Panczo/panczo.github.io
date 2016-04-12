@@ -6,13 +6,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(bootstrap.min.css);
 @import url(bootstrap-theme.css);
 @import url(owl.carousel.css);
 @import url(owl.theme.css);
-@import url(style.css);
+@import url(export.css);
 @import url(bootstrap-image-gallery.css);
 @import url(blueimp-gallery.min.css);
-@import url(colors/yellow.css);
+@import url(yellow.css);
+@import url(style.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
