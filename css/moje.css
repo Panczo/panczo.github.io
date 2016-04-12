@@ -1,11 +1,7 @@
 @import "animations.css";
+@import "bootstrap.min.css";
 @import "bootstrap-theme.css";
-/* @import "owl.carousel.css"; */
-/* @import "owl.theme.css"; */
 @import "style.css";
-/* @import "bootstrap-image-gallery.css"; */
-/* @import "blueimp-gallery.min.css"; */
-/* @import "colors/yellow.css"; */
 
 html {
     font-family: sans-serif;
