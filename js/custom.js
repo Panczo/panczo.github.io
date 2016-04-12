@@ -1,18 +1,8 @@
 $(document).ready(function (){
   
 	"use strict";
-  $('.laptop-wrapper').slick({
-	  infinite: true,
-	  speed: 550,
-	  fade: true,
-	  cssEase: 'linear',
-  	autoplay: true,
-  	autoplaySpeed: 3000,
-  	fade: true,
-  	cssEase: 'linear'
-	});
+	
 	/* Setting Sizes 
-
 	-----------------------------------------------------*/
 	
 	function setSizes() {
@@ -73,7 +63,6 @@ $(document).ready(function (){
 		  return -$(this).height()+1;
 		}
 	  });
-	  
 	
 	/* Resume
 	-----------------------------------------------------*/
@@ -259,19 +248,14 @@ $(document).ready(function (){
 		if($('#profile-bg img, .page-title-bg img, .blog-slide-photo img').height()<$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').parent().height()) {
 			$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').removeClass('too-slim');
 			$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').addClass('too-short');
-			//console.log('t1');
 		}
 		if($('#profile-bg img, .page-title-bg img, .blog-slide-photo img').width()<$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').parent().width()) {
 			$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').removeClass('too-short');
 			$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').addClass('too-slim');
-			//console.log('t2');
 		}
 	}
 
 	checkPhotos();
-		
-	//console.log($('#profile-bg img, .page-title-bg img, .blog-slide-photo img').height()+'   '+$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').parent().height());
-	//console.log($('#profile-bg img, .page-title-bg img, .blog-slide-photo img').width()+'   '+$('#profile-bg img, .page-title-bg img, .blog-slide-photo img').parent().width());
 	
 	/* Responsive Videos
 	-----------------------------------------------------*/
@@ -279,69 +263,6 @@ $(document).ready(function (){
 	$(function(){
 	  $('body').fitVids();
 	});
-	
-	/* Google Map
-	-----------------------------------------------------*/
-	
-	function mapInitialize() {
-	
-	  var yourLatitude = 50.402;
-	  var yourLongitude = 18.89;
-	  
-	  var myOptions = {
-		zoom: 14,
-		center: new google.maps.LatLng(yourLatitude,yourLongitude-0.01),
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		mapTypeControl: false,
-		panControl: false,
-		zoomControl: false,
-		scaleControl: false,
-		streetViewControl: false,
-		styles: [
-					  {
-						  "stylers": [
-							  {
-								  "hue": "#F8D25F"
-							  },
-							  {
-								  "invert_lightness": true
-							  },
-							  {
-								  "saturation": -65
-							  },
-							  {
-								  "lightness": 33
-							  },
-							  {
-								  "gamma": 0.5
-							  }
-						  ]
-					  },
-					  {
-						  "featureType": "water",
-						  "elementType": "geometry",
-						  "stylers": [
-							  {
-								  "color": "#2D333C"
-							  }
-						  ]
-					  }
-				  ]
-	  };
-	  
-	  var map = new google.maps.Map(document.getElementById('google-map'), myOptions);
-	  
-	  var image = 'images/my-location.png';
-	  var myLatLng = new google.maps.LatLng(yourLatitude,yourLongitude);
-	  var myLocation = new google.maps.Marker({
-		  position: myLatLng,
-		  map: map,
-		  icon: image
-	  });
-	
-	}
-	
-	google.maps.event.addDomListener(window, 'load', mapInitialize);
 
 	/* Contact Form
 	-----------------------------------------------------*/
