@@ -14,7 +14,7 @@
     body {
 		color: #282828;
 		overflow-x: hidden; 
-		font-size: 12px;
+		font-size: 14px;
 		font-family: "Helvetica Neue",'Raleway',Helvetica,Arial,sans-serif;
 	}
 	
@@ -70,7 +70,7 @@
 	}
 	
 	h1,h2,h3 {
-		font-weight: 100;
+		font-weight: 200;
 	}
 	
 	h4,h5,h6 {
@@ -553,7 +553,7 @@
 
 	.single-project {
 		position: relative;
-		width: 25%;
+		width: 50%;
 		float: left;
 		background: #000;
 		overflow: hidden;
@@ -587,7 +587,7 @@
 	
 	.project-info {
 		position: absolute;
-		top: 50%;
+		top: 75%;
 		right: -100%;
 		width: 100%;
 		text-align: right;
@@ -611,11 +611,11 @@
 	
 	.project-title {
 		font-size: 36px;
-		font-weight: 100;
+		font-weight: 300;
 	}
 	
 	.project-caption {
-		font-size: 12px;
+		font-size: 17px;
 		font-weight: 500;
 	}
 	
@@ -932,8 +932,8 @@
 	
 	.btn {
 		color: inherit;
-		font-size: 11px;
-		font-weight: 500;
+		font-size: 13px;
+		font-weight: 700;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
@@ -1641,5 +1641,6 @@
 /* --- BACKGROUNDS
 /* ----------------------------------------------------------------------------- */
 
-	
-	
+#spolisty {
+	max-height: 567px;
+}
