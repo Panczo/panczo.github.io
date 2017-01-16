@@ -1,39 +1,40 @@
 <div class="content padded">
-	
+
     <div class="row">
   	 <!-- Top Bar -->
       <div class="top-bar">
       	<span class="pull-left"><a href="#" class="ajax-project-close btn btn-default btn-sm btn-pull-up"><i class="fa fa-times icon-before"></i>Zamknij</a></span>
           <h6 class="pull-right text-muted short">Szczegóły projektu</h6>
       </div>
-    
-      <div class="col-lg-6">  
+
+      <div class="col-lg-6">
 		    <div class="long">
           <h2 class="short">ŚLZPN</h2>
           <span class="text-muted">webdesign / webdevelopment</span>
         </div>
-        
+
         <div class="row">
-        
+
         	<div class="col-lg-12">
           	<h5>Sport app</h5>
             <p>Informacje i wydarzenia sportowe ze ŚLZPN p. Rybnik</p>
           </div>
-            
+
           <div class="col-lg-12">
           	<h5>Opis</h5>
-              <p>Aplikacja napisana dla Śląskiego Związku Piłki Nożnej. Użytkownik posiada wgląd do wyników, aktualnych tabel, terminarzy wszystkich lig będących członkami ŚLZPN. Poprzez wykaz wszystkich drużyn, zawierający informacje o klubie, drużynach danego klubu biorących udział w rozgrywkach a także danych kontaktowych, użytkownik zyskuje możliwość szybkiego kontaktu z przedstawicielem danego klubu. 
-              Klient poprzez konsolę może dodawać najnowsze informacje, zdjęcia, edytować skład zarządu, komisji oraz wydziałów. Poprzez konsolę posiada również możliwość edycji niektórych elementów strony.</p>
-              <p><a href="http://www.nowa.slzpn.pl" target="_blank" class="btn btn-primary">Zobacz online</a> </p>
+              <p>Aplikacja napisana dla Śląskiego Związku Piłki Nożnej podokręg Rybnik.
+								Użytkownik posiada wgląd do wyników, aktualnych tabel, terminarzy oraz statystyk drużyn zrzeszonych w Śląskim Związku Piłki Nożnej p. Rybnik.
+							Klient poprzez konsolę może dodawać najnowsze informacje, zdjęcia, składy zarządu i komisji oraz wydziałów. Poprzez konsolę posiada również możliwość edycji niektórych elementów strony.</p>
+							Po stronie backendu aplikacja komunikuje się z ekstranetem PZPN poprzez protokół SOAP.
+							<p><a href="http://www.slzpn.pl" target="_blank" class="btn btn-primary">Zobacz online</a> </p>
           </div>
-        
-        </div>      
+        </div>
       </div>
-        
+
       <div class="col-lg-6">
-      
+
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        
+
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -41,7 +42,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           </ol>
-        
+
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item">
@@ -57,7 +58,7 @@
               <img src="images/slzpn3.jpeg" alt="" />
             </div>
           </div>
-        
+
           <!-- Controls -->
           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
@@ -65,27 +66,27 @@
           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-          
+
         </div>
-      
-      </div>       
-    </div> 
+
+      </div>
+    </div>
 </div>
 
 <!-- Scripts -->
 <script>
 $(document).ready(function (){
-	
-  // Ajax Project Close	
-	
+
+  // Ajax Project Close
+
   function closeContent() {
 	  $('.project-content').delay(100).slideUp(1000,function() { $('.project-loader').show(0); $('.project-loader .logo-loader').show(0); $.waypoints('refresh') });
-	  $('html, body').animate({scrollTop:$('#portfolio').position().top },600); 
+	  $('html, body').animate({scrollTop:$('#portfolio').position().top },600);
   }
-	
+
   $('.ajax-project-close').click(function() {
 	  closeContent();
   });
-  
+
 });
 </script>
